@@ -146,10 +146,10 @@ From the summary, the model is only able to account for a total variation of 46%
 
    Results:
    
-   Train bias: 4.134633132394236e-17 
+   Train bias: 4.134633132394236e-17, 
    Train variance: 0.16304818835004653
     
-   Test bias: 0.0013848834907673557 
+   Test bias: 0.0013848834907673557, 
    Test variance: 0.1605880164739517
                                                   
  From the above, our model has a relatively low bias and variance, therefore predictions will be accurate
@@ -157,8 +157,10 @@ From the summary, the model is only able to account for a total variation of 46%
  ### Conclusion
  
             1. The Simple linear regression model can only account for 45% of the total variation for the dependent variables
-            2. Multiple regression improves the model as we are now able to account for 59% of the total variations for the dependent variables
-            3. Both model validation methods i.e. split trai-test and K-Fold shows that there is no significant difference between the actual and model data.
+            2. Multiple regression improves the model as we are now able to account for 59% of the total variations for the 
+            dependent variables
+            3. Both model validation methods i.e. split trai-test and K-Fold shows that there is no significant difference between 
+            the actual and model data.
             4. Bias-Variance tradeoff shows relatively low bias and variance.
             5. We fail to reject the null hypothesis.
             
