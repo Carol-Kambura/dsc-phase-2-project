@@ -65,42 +65,42 @@ Steps followed:
 
        View of King County Median prices from the 70 zip codes given
        
-    ![image](https://user-images.githubusercontent.com/119498882/227844540-5b5c56ff-d296-455a-b734-4b3b04385424.png)
+  ![image](https://user-images.githubusercontent.com/119498882/227844540-5b5c56ff-d296-455a-b734-4b3b04385424.png)
      
         Price Trends accross the years using Median price
         
-    ![image](https://user-images.githubusercontent.com/119498882/227844832-e2719ba8-1647-409d-81b2-0790cd4e7851.png)
+   ![image](https://user-images.githubusercontent.com/119498882/227844832-e2719ba8-1647-409d-81b2-0790cd4e7851.png)
     
         ## Feature Linearity test
         
-             ![download](https://user-images.githubusercontent.com/119498882/227845032-8397f762-70c4-4a1d-856d-91df4a3cf69e.png)
+   ![download](https://user-images.githubusercontent.com/119498882/227845032-8397f762-70c4-4a1d-856d-91df4a3cf69e.png)
              
                A linear relatisonship is observed between Price and Sqft_living, sqft_above, bathrooms and bedrooms
                
         ## Correlation Analysis .corr()>0.70
         
-              ![download](https://user-images.githubusercontent.com/119498882/227845596-16d54cf6-58c8-4f31-9f24-2a1c84ee8cd3.png)
+   ![download](https://user-images.githubusercontent.com/119498882/227845596-16d54cf6-58c8-4f31-9f24-2a1c84ee8cd3.png)
                 
                     price, sqft_living have a high correlation
                     sqft_living, sqft_above, grade have a high correlation
                     
               Check for top 3 features that are highly correlated to price 
               
-                   ![download](https://user-images.githubusercontent.com/119498882/227846096-d6b6e907-76ef-40fd-8d1e-f699125ed2b6.png) 
+   ![download](https://user-images.githubusercontent.com/119498882/227846096-d6b6e907-76ef-40fd-8d1e-f699125ed2b6.png) 
                    
-                         ![download](https://user-images.githubusercontent.com/119498882/227846169-ba51569d-981c-4e2b-868d-7cacbb6dae7f.png)   
+   ![download](https://user-images.githubusercontent.com/119498882/227846169-ba51569d-981c-4e2b-868d-7cacbb6dae7f.png)   
                          
              After checking for multicollinearity, the below are the features to be used for modelling:
                
-                    ![image](https://user-images.githubusercontent.com/119498882/227846972-47f433e1-2a63-4ff9-bff0-3b42082d95d9.png)
+   ![image](https://user-images.githubusercontent.com/119498882/227846972-47f433e1-2a63-4ff9-bff0-3b42082d95d9.png)
              
              ### Simple Linear Regression
 
-                           ![image](https://user-images.githubusercontent.com/119498882/227847090-ca5db468-3f0f-465f-b6fd-d1a94fcb4681.png)
+   ![image](https://user-images.githubusercontent.com/119498882/227850337-0e9b5325-0d7b-4c75-b6e1-111ae9e9c852.png)
                                
                               R2 of 45% means the model is only able to account for 45% of the total variation in the dependent variable, while the remaining 55% is                               due to other factors not included in the model or random error. 
                               
-                                       ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png)
+  ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png)
                                        
                                  Model accuracy was tested to be 45%
                                  
@@ -108,13 +108,13 @@ Steps followed:
              
                        Added in the othe continuous data i.e.sqft_lot to see if the model would improve:
                                      
-                                     ![image](https://user-images.githubusercontent.com/119498882/227847402-79b050ad-9592-473d-95e6-6e45bb0cbc6d.png)
+   ![image](https://user-images.githubusercontent.com/119498882/227847402-79b050ad-9592-473d-95e6-6e45bb0cbc6d.png)
 
                                          From the summary, the model is only able to account for a total variation of 46% in the dependent variable while the rest                                            54% remain unaccounted for. However the model has improved by 1% with the addition of sqft_lit
                                          
                       Added the categorical data:
 
-                                     ![image](https://user-images.githubusercontent.com/119498882/227847758-79c89ec7-459a-4a3a-b121-b35cbcf1c782.png)
+   ![image](https://user-images.githubusercontent.com/119498882/227847758-79c89ec7-459a-4a3a-b121-b35cbcf1c782.png)
                                      
                            ### Model Validation
                            
@@ -128,13 +128,13 @@ Steps followed:
                                    2.  K - Fold Cross Validation score
                                             Results:
                                             
-                                            ![download](https://user-images.githubusercontent.com/119498882/227848405-05904cd6-cb12-4f36-b338-8938aeaa9dd7.png)
+   ![download](https://user-images.githubusercontent.com/119498882/227848405-05904cd6-cb12-4f36-b338-8938aeaa9dd7.png)
                                             
                                                   There is no significance differece between Train_score and Test_score
                                             
-                                            ![download](https://user-images.githubusercontent.com/119498882/227848576-4db184a3-5649-45a8-b4bc-5eb44d858c66.png)
+   ![download](https://user-images.githubusercontent.com/119498882/227848576-4db184a3-5649-45a8-b4bc-5eb44d858c66.png)
                                              
-                                            ![download](https://user-images.githubusercontent.com/119498882/227848643-3f4b97a9-39f2-40e4-a22b-714e2fe7fc45.png)
+   ![download](https://user-images.githubusercontent.com/119498882/227848643-3f4b97a9-39f2-40e4-a22b-714e2fe7fc45.png)
 
 
                                    3. Bias-Variance Trade-off
@@ -161,7 +161,6 @@ Steps followed:
  
             1. - Apply other advanced methods to see if this improves predictions
 
-  ![image](https://user-images.githubusercontent.com/119498882/227844540-5b5c56ff-d296-455a-b734-4b3b04385424.png)
  
 
 
