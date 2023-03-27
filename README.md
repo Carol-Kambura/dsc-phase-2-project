@@ -98,7 +98,8 @@ Steps followed:
 
    ![image](https://user-images.githubusercontent.com/119498882/227850337-0e9b5325-0d7b-4c75-b6e1-111ae9e9c852.png)
                                
-  R2 of 45% means the model is only able to account for 45% of the total variation in the dependent variable, while the remaining 55% is due to other factors not included in the model or random error.                             
+  R2 of 45% means the model is only able to account for 45% of the total variation in the dependent variable, while the remaining 
+  55% is due to other factors not included in the model or random error.                             
                               
   ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png)
                                        
@@ -114,7 +115,8 @@ Steps followed:
                                      
    ![image](https://user-images.githubusercontent.com/119498882/227847402-79b050ad-9592-473d-95e6-6e45bb0cbc6d.png)
 
-From the summary, the model is only able to account for a total variation of 46% in the dependent variable while the rest 54% remain unaccounted for. However the model has improved by 1% with the addition of sqft_lit                                           
+From the summary, the model is only able to account for a total variation of 46% in the dependent variable while the rest 54% remain
+unaccounted for. However the model has improved by 1% with the addition of sqft_lit                                           
                                          
   Added the categorical data:
 
@@ -128,7 +130,8 @@ From the summary, the model is only able to account for a total variation of 46%
          
          Train Mean Squared Error: 0.1138816185667106
          Test Mean Squared Error:  0.11433987779287012
-         The test error is not that significantly different from the train meaning that the model is able to generalize the future cases well
+         The test error is not that significantly different from the train meaning that the model is able to generalize the
+         future cases well
                                                       
      2.  K - Fold Cross Validation score
      
