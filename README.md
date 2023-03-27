@@ -161,7 +161,7 @@ Steps followed:
  
             1. - Apply other advanced methods to see if this improves predictions
 
-
+  ![image](https://user-images.githubusercontent.com/119498882/227844540-5b5c56ff-d296-455a-b734-4b3b04385424.png)
  
 
 
