@@ -81,8 +81,8 @@ including economic and political. (Each year cannot be the same)!
         ## Feature Linearity test
         
    ![download](https://user-images.githubusercontent.com/119498882/227845032-8397f762-70c4-4a1d-856d-91df4a3cf69e.png)
-             
- A linear relatisonship is observed between Price and Sqft_living, sqft_above, bathrooms and bedrooms
+            
+A linear relatisonship is observed between Price and Sqft_living, sqft_above, bathrooms and bedrooms
                
  ## Correlation Analysis .corr()>0.70
         
@@ -101,7 +101,7 @@ Identify for top 3 features that are highly correlated to price
                
    ![image](https://user-images.githubusercontent.com/119498882/227846972-47f433e1-2a63-4ff9-bff0-3b42082d95d9.png)
              
-    ### Simple Linear Regression
+  ### Simple Linear Regression
 
    ![image](https://user-images.githubusercontent.com/119498882/227850337-0e9b5325-0d7b-4c75-b6e1-111ae9e9c852.png)
                                
@@ -110,7 +110,7 @@ Identify for top 3 features that are highly correlated to price
                               
   ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png)
                                        
-   Model accuracy was tested to be 45%
+ Model accuracy was tested to be 45%
    
    ![image](https://user-images.githubusercontent.com/119498882/227851884-985c39a2-2fb5-4f11-8877-5ea603695e08.png)
    
