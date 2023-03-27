@@ -41,10 +41,13 @@ Steps followed:
 
 ### Data Preparation
       1. Importing relevant packages i.e. Pandas, Matplotlib, Seaborn, Scipy, Sklearn and Statsmodel
+      
       2. Data extraction:
           - Dataset `kc_house_data.csv`
+          
      3. Data Cleaning
           - Dropping columns
+          
      4. Data Wrangling
          - Indexing data
          - Dealing with outliers
@@ -79,22 +82,22 @@ including economic and political. (Each year cannot be the same)!
         
    ![download](https://user-images.githubusercontent.com/119498882/227845032-8397f762-70c4-4a1d-856d-91df4a3cf69e.png)
              
-       A linear relatisonship is observed between Price and Sqft_living, sqft_above, bathrooms and bedrooms
+ A linear relatisonship is observed between Price and Sqft_living, sqft_above, bathrooms and bedrooms
                
-     ## Correlation Analysis .corr()>0.70
+ ## Correlation Analysis .corr()>0.70
         
    ![download](https://user-images.githubusercontent.com/119498882/227845596-16d54cf6-58c8-4f31-9f24-2a1c84ee8cd3.png)
                 
-          price, sqft_living have a high correlation
-         sqft_living, sqft_above, grade have a high correlation
+ price, sqft_living have a high correlation
+ sqft_living, sqft_above, grade have a high correlation
                     
-    Check for top 3 features that are highly correlated to price 
+Identify for top 3 features that are highly correlated to price 
               
    ![download](https://user-images.githubusercontent.com/119498882/227846096-d6b6e907-76ef-40fd-8d1e-f699125ed2b6.png) 
                    
    ![download](https://user-images.githubusercontent.com/119498882/227846169-ba51569d-981c-4e2b-868d-7cacbb6dae7f.png)   
                          
-    After checking for multicollinearity, the below are the features to be used for modelling:
+ After checking for multicollinearity, the below are the features to be used for modelling:
                
    ![image](https://user-images.githubusercontent.com/119498882/227846972-47f433e1-2a63-4ff9-bff0-3b42082d95d9.png)
              
@@ -111,18 +114,18 @@ including economic and political. (Each year cannot be the same)!
    
    ![image](https://user-images.githubusercontent.com/119498882/227851884-985c39a2-2fb5-4f11-8877-5ea603695e08.png)
    
-   The prediction column shows price prediction using the model above i.e. print(results.predict([7.07,8.64,1])) = [12.64642298] (First row results)
+ The prediction column shows price prediction using the model above i.e. print(results.predict([7.07,8.64,1])) = [12.64642298] (First row results)
                                   
    ### Multiple Linear Regression
              
-   Added in the othe continuous data i.e.sqft_lot to see if the model would improve:
+Added in the othe continuous data i.e.sqft_lot to see if the model would improve:
                                      
    ![image](https://user-images.githubusercontent.com/119498882/227847402-79b050ad-9592-473d-95e6-6e45bb0cbc6d.png)
 
 From the summary, the model is only able to account for a total variation of 46% in the dependent variable while the rest 54% remain
 unaccounted for. However the model has improved by 1% with the addition of sqft_lit                                           
                                          
-  Added the categorical data:
+Added the categorical data:
 
    ![image](https://user-images.githubusercontent.com/119498882/227847758-79c89ec7-459a-4a3a-b121-b35cbcf1c782.png)
                                      
