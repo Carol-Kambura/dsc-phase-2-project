@@ -75,79 +75,74 @@ Steps followed:
         
    ![download](https://user-images.githubusercontent.com/119498882/227845032-8397f762-70c4-4a1d-856d-91df4a3cf69e.png)
              
-               A linear relatisonship is observed between Price and Sqft_living, sqft_above, bathrooms and bedrooms
+       A linear relatisonship is observed between Price and Sqft_living, sqft_above, bathrooms and bedrooms
                
-        ## Correlation Analysis .corr()>0.70
+     ## Correlation Analysis .corr()>0.70
         
    ![download](https://user-images.githubusercontent.com/119498882/227845596-16d54cf6-58c8-4f31-9f24-2a1c84ee8cd3.png)
                 
-                    price, sqft_living have a high correlation
-                    sqft_living, sqft_above, grade have a high correlation
+          price, sqft_living have a high correlation
+         sqft_living, sqft_above, grade have a high correlation
                     
-              Check for top 3 features that are highly correlated to price 
+    Check for top 3 features that are highly correlated to price 
               
    ![download](https://user-images.githubusercontent.com/119498882/227846096-d6b6e907-76ef-40fd-8d1e-f699125ed2b6.png) 
                    
    ![download](https://user-images.githubusercontent.com/119498882/227846169-ba51569d-981c-4e2b-868d-7cacbb6dae7f.png)   
                          
-             After checking for multicollinearity, the below are the features to be used for modelling:
+    After checking for multicollinearity, the below are the features to be used for modelling:
                
    ![image](https://user-images.githubusercontent.com/119498882/227846972-47f433e1-2a63-4ff9-bff0-3b42082d95d9.png)
              
-             ### Simple Linear Regression
+    ### Simple Linear Regression
 
    ![image](https://user-images.githubusercontent.com/119498882/227850337-0e9b5325-0d7b-4c75-b6e1-111ae9e9c852.png)
                                
-                              R2 of 45% means the model is only able to account for 45% of the total variation in the dependent variable, while the remaining 55% is                               due to other factors not included in the model or random error. 
+  R2 of 45% means the model is only able to account for 45% of the total variation in the dependent variable, while the remaining 55% is due to other factors not included in the model or random error.                             
                               
   ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png)
                                        
-                                 Model accuracy was tested to be 45%
+   Model accuracy was tested to be 45%
                                  
-             ### Multiple Linear Regression
+   ### Multiple Linear Regression
              
-                       Added in the othe continuous data i.e.sqft_lot to see if the model would improve:
+   Added in the othe continuous data i.e.sqft_lot to see if the model would improve:
                                      
    ![image](https://user-images.githubusercontent.com/119498882/227847402-79b050ad-9592-473d-95e6-6e45bb0cbc6d.png)
 
-                                         From the summary, the model is only able to account for a total variation of 46% in the dependent variable while the rest                                            54% remain unaccounted for. However the model has improved by 1% with the addition of sqft_lit
+From the summary, the model is only able to account for a total variation of 46% in the dependent variable while the rest 54% remain unaccounted for. However the model has improved by 1% with the addition of sqft_lit                                           
                                          
-                      Added the categorical data:
+  Added the categorical data:
 
    ![image](https://user-images.githubusercontent.com/119498882/227847758-79c89ec7-459a-4a3a-b121-b35cbcf1c782.png)
                                      
-                           ### Model Validation
+   ### Model Validation
                            
-                                   1. Split Train-Test
-                                          Results:
-                                                    Train Mean Squared Error: 0.1138816185667106
-                                                    Test Mean Squared Error:  0.11433987779287012
-                                                      The test error is not that significantly different from the train meaning that the model is able to
-                                                      generalize the future cases well
+     1. Split Train-Test
+         Results:
+         Train Mean Squared Error: 0.1138816185667106
+         Test Mean Squared Error:  0.11433987779287012
+         The test error is not that significantly different from the train meaning that the model is able to generalize the future cases well
                                                       
-                                   2.  K - Fold Cross Validation score
-                                            Results:
+     2.  K - Fold Cross Validation score
+         Results:
                                             
    ![download](https://user-images.githubusercontent.com/119498882/227848405-05904cd6-cb12-4f36-b338-8938aeaa9dd7.png)
                                             
-                                                  There is no significance differece between Train_score and Test_score
+    There is no significance differece between Train_score and Test_score
                                             
    ![download](https://user-images.githubusercontent.com/119498882/227848576-4db184a3-5649-45a8-b4bc-5eb44d858c66.png)
                                              
    ![download](https://user-images.githubusercontent.com/119498882/227848643-3f4b97a9-39f2-40e4-a22b-714e2fe7fc45.png)
 
-
-                                   3. Bias-Variance Trade-off
-                                   
-                                             Results:
-                                             
-                                                  Train bias: 4.134633132394236e-17 
-                                                  Train variance: 0.16304818835004653
+3. Bias-Variance Trade-off
+   Results:
+  Train bias: 4.134633132394236e-17 
+  Train variance: 0.16304818835004653
+  Test bias: 0.0013848834907673557 
+  Test variance: 0.1605880164739517
                                                   
-                                                  Test bias: 0.0013848834907673557 
-                                                  Test variance: 0.1605880164739517
-                                                  
-                                                     From the above, our model has a relatively low bias and variance, therefore predictions will be accurate
+ From the above, our model has a relatively low bias and variance, therefore predictions will be accurate
   
  ### Conclusion
  
