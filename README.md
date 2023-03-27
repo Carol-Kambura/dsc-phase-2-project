@@ -71,6 +71,10 @@ Steps followed:
         
   ![image](https://user-images.githubusercontent.com/119498882/227851567-a2e19e9b-6a99-49c3-8ada-b14c743dbc47.png)
     
+    On the trend of prices map, we used median prices from the 70 given zip codes. It is observed that there is no linear relationship
+   between year built and prices. It is expected as house prices are volatile and are influenced by different direct and indirect factors
+   including economic and political. (Each year cannot be the same)!
+
         ## Feature Linearity test
         
    ![download](https://user-images.githubusercontent.com/119498882/227845032-8397f762-70c4-4a1d-856d-91df4a3cf69e.png)
