@@ -103,7 +103,11 @@ Steps followed:
   ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png)
                                        
    Model accuracy was tested to be 45%
-                                 
+   
+   ![image](https://user-images.githubusercontent.com/119498882/227851884-985c39a2-2fb5-4f11-8877-5ea603695e08.png)
+   
+   The prediction column shows price prediction using the model above i.e. print(results.predict([7.07,8.64,1])) = [12.64642298] (First row results)
+                                  
    ### Multiple Linear Regression
              
    Added in the othe continuous data i.e.sqft_lot to see if the model would improve:
