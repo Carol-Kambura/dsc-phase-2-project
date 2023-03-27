@@ -146,10 +146,11 @@ From the summary, the model is only able to account for a total variation of 46%
 
    Results:
    
-    Train bias: 4.134633132394236e-17 
-    Train variance: 0.16304818835004653
-    Test bias: 0.0013848834907673557 
-    Test variance: 0.1605880164739517
+   Train bias: 4.134633132394236e-17 
+   Train variance: 0.16304818835004653
+    
+   Test bias: 0.0013848834907673557 
+   Test variance: 0.1605880164739517
                                                   
  From the above, our model has a relatively low bias and variance, therefore predictions will be accurate
   
