@@ -14,34 +14,12 @@ For this project, you will use regression modeling to analyze house sales in a n
 
 This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. 
 
-### Feature Columns 🕵🏽‍♀️
-id - Unique ID for each home sold
-date - Date of the home sale
-price - Price of each home sold
-bedrooms - Number of bedrooms
-bathrooms - Number of bathrooms, where .5 accounts for a room with a toilet but no shower
-sqft_living - Square footage of the apartments interior living space
-sqft_lot - Square footage of the land space
-floors - Number of floors
-waterfront - A dummy variable for whether the apartment was overlooking the waterfront or not
-view - An index from 0 to 4 of how good the view of the property was
-condition - An index from 1 to 5 on the condition of the apartment,
-grade - An index from 1 to 13, where 1-3 falls short of building construction and design, 7 has an average level of construction and design, and 11-13 have a high quality level of construction and design.
-sqft_above - The square footage of the interior housing space that is above ground level
-sqft_basement - The square footage of the interior housing space that is below ground level
-yr_built - The year the house was initially built
-yr_renovated - The year of the house’s last renovation
-zipcode - What zipcode area the house is in
-lat - Lattitude
-long - Longitude
-sqft_living15 - The square footage of interior housing living space for the nearest 15 neighbors
-sqft_lot15 - The square footage of the land lots of the nearest 15 neighbors
-
 ### Business Problem 🤔
 
 One of the greatest factors that influence the buying and selling of homes is price. In this study, I will look at a dataset from King County to see what factors influence buying and selling price of a home to help both a homeoweners make informed pricing decisions and home buyers get insight on market price trends and budget to set.
 
 Objectives ✍🏽
+
 👉🏽 This notebook aims to:
 
 - Explore and preprocess the data for regression models
@@ -58,6 +36,7 @@ Objectives ✍🏽
  - What factors influence house prices and how are they correlated?
 
 ### Methods
+
 Steps followed:
 
 ### Data Preparation
@@ -71,14 +50,19 @@ Steps followed:
          - Dealing with outliers
          - Data standardization and normalization
          - Dealing with categorical data
+         
 ### Data Modelling
+
       1. Regression models i.e Linear and multiple were applied to analyze house sales in King county. 
+      
 ### Model Validation
+
        The following methods were used to validate the models:
           - Split Train-Test
           - K-Fold Cross validation
           - Bias-Variance Trade off
 ### Results
+
        View of King County Median prices from the 70 zip codes given
        
     ![image](https://user-images.githubusercontent.com/119498882/227844540-5b5c56ff-d296-455a-b734-4b3b04385424.png)
@@ -116,8 +100,8 @@ Steps followed:
                                
                               R2 of 45% means the model is only able to account for 45% of the total variation in the dependent variable, while the remaining 55% is                               due to other factors not included in the model or random error. 
                               
-                                       ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png) 
-                      
+                                       ![download](https://user-images.githubusercontent.com/119498882/227847189-09e1afd5-ba4b-4ec4-bdab-fbaa953fa546.png)
+                                       
                                  Model accuracy was tested to be 45%
                                  
              ### Multiple Linear Regression
