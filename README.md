@@ -69,7 +69,7 @@ Steps followed:
      
         Price Trends accross the years using Median price
         
-   ![image](https://user-images.githubusercontent.com/119498882/227844832-e2719ba8-1647-409d-81b2-0790cd4e7851.png)
+  ![image](https://user-images.githubusercontent.com/119498882/227851567-a2e19e9b-6a99-49c3-8ada-b14c743dbc47.png)
     
         ## Feature Linearity test
         
@@ -119,12 +119,15 @@ From the summary, the model is only able to account for a total variation of 46%
    ### Model Validation
                            
      1. Split Train-Test
+     
          Results:
+         
          Train Mean Squared Error: 0.1138816185667106
          Test Mean Squared Error:  0.11433987779287012
          The test error is not that significantly different from the train meaning that the model is able to generalize the future cases well
                                                       
      2.  K - Fold Cross Validation score
+     
          Results:
                                             
    ![download](https://user-images.githubusercontent.com/119498882/227848405-05904cd6-cb12-4f36-b338-8938aeaa9dd7.png)
@@ -136,11 +139,13 @@ From the summary, the model is only able to account for a total variation of 46%
    ![download](https://user-images.githubusercontent.com/119498882/227848643-3f4b97a9-39f2-40e4-a22b-714e2fe7fc45.png)
 
 3. Bias-Variance Trade-off
+
    Results:
-  Train bias: 4.134633132394236e-17 
-  Train variance: 0.16304818835004653
-  Test bias: 0.0013848834907673557 
-  Test variance: 0.1605880164739517
+   
+    Train bias: 4.134633132394236e-17 
+    Train variance: 0.16304818835004653
+    Test bias: 0.0013848834907673557 
+    Test variance: 0.1605880164739517
                                                   
  From the above, our model has a relatively low bias and variance, therefore predictions will be accurate
   
